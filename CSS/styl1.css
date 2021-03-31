@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,400;0,700;0,900;1,100&family=Montserrat:wght@100;400;500&family=Open+Sans+Condensed:wght@300&family=Roboto:ital,wght@0,100;0,700;0,900;1,300;1,400;1,500;1,900&display=swap');
+
 body
 {
-background-color: #FFFFFF !important;    
-    
-  
+background-color: #FFFFFF !important;      
+font-family: 'Roboto', sans-serif !important;  
 }
 
 
@@ -31,10 +32,12 @@ background: black;
 .menu_text
 {
 color: black !important;
-font-family:Lato ;
 letter-spacing: 1px;
-font-size:110%;    
-font-weight: 400;        
+font-weight: 700;    
+letter-spacing: 1px;    
+font-size:120%;    
+font-weight: 400;   
+font-family: 'Lato', sans-serif !important;   
 }
 
 #hello > h1
@@ -58,7 +61,8 @@ margin-top: 60px;
 
 .menu_pasek
 {
-background-color: #54B1FF !important;       
+background-color: #54B1FF !important;  
+font-weight: 900;      
 }
 
 .navbar-brand
@@ -125,25 +129,182 @@ float: none;
 vertical-align: top;  
 }
 
+img 
+{
+background:#000;
+border: 10px solid rgba(0, 0, 0,1);
+border-radius: 20px;
+display: block;
+margin: 1.3em auto;
+max-width: 95%;
+transition: 0.5s;
+-webkit-box-shadow: 11px 10px 9px -4px rgba(0,0,0,0.82); 
+box-shadow: 11px 10px 9px -4px rgba(0,0,0,0.82);  
+-webkit-background-clip: padding-box;
+}
+
+
+/* Okienka z animacjami */
+.overlayT
+{
+position: relative;
+transform: scale(1);
+transition: transform 0.7s ease-in-out;
+text-align: center;
+}
+
+.overlayT .link
+{
+position: absolute;
+display: block;
+height: 100%;
+width: 96%;
+background-color: #000000;
+left: 6px;
+top: 0px;
+opacity: 0;
+transition: opacity 0.4s ease-in-out;  
+border-radius: 20px;    
+box-shadow: 4px;
+border:3px solid black; 
+text-decoration: none;
+color: white;   
+transition-delay: 0.5s;   
+}
+
+.overlayT:hover .link
+{
+/*opacity: 0.85;*/
+}
+
+.overlayT > a > p
+{
+text-align: center;
+text-transform:uppercase;
+font-size: 30px; 
+margin-bottom: 5px; 
+}
+
+.overlayT > a >hr
+{
+width: 50%;
+height: 1px;
+background-color:white;
+margin-top: 0px;    
+margin-bottom: 15px;    
+}
+
+.overlayT > a >h2
+{   
+text-align: center;
+text-transform:uppercase;   
+font-size: 17px;     
+}
+
+.overlayT > a >h3
+{
+text-align: center;
+text-transform:uppercase;
+font-size: 13px; 
+margin-bottom: 15px;     
+}
+
+.overlayT.animate 
+{
+transform: scale(1.07);
+}
+
+a.disabled 
+{
+pointer-events: none;
+cursor: default;
+}
+
+
+/*Medium*/
+@media(min-width:768px,max-width: 991px)
+{
+	.overlayT > a > p
+    {
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 20px; 
+    margin-bottom: 2px; 
+    margin-top: 0px; 
+    }
+    
+   
+
+
+    .overlayT > a >hr
+    {
+    width: 50%;
+    height: 1px;
+    background-color:white;
+    margin-top: 0px;    
+    margin-bottom: 5px;    
+    }
+
+
+    .overlayT > a >h2
+    {   
+    text-align: center;
+    text-transform:uppercase;   
+    font-size: 11px;
+    margin-top: 0px;      
+    }
+
+    .overlayT > a >h3
+    {
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 13px;     
+    }
+}
 
 
 
+/*Od Medium do Large*/
+@media(min-width:768px,max-width:1199px)
+{
+	.overlayT > a > p
+    {
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 50px; 
+    margin-bottom: 2px; 
+    margin-top: 0px; 
+    }
 
 
+ 
+    
+    .overlayT > a >hr
+    {
+    width: 75%;
+    height: 2px;
+    background-color:white;
+    margin-top: 4px;    
+    margin-bottom: 15px;    
+    }
 
 
+    .overlayT > a >h2
+    {     
+    text-align: center;
+    text-transform:uppercase;   
+    font-size: 21px;
+    margin-top:15px;    
+        
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    .overlayT > a >h3
+    {
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 18px;     
+    }
+}
 
 
 
