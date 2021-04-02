@@ -91,7 +91,13 @@ clear: both;
 {
 margin-left: auto;
 margin-right: auto;
-width: 90%;   
+width: 90%;  
+position: relative;    
+}
+figure
+{
+position: relative;    
+    
 }
 
 .blok 
@@ -169,19 +175,16 @@ box-shadow: 4px;
 border:3px solid black; 
 text-decoration: none;
 color: white;   
-transition-delay: 0.5s;   
+transition-delay: 0.5s; 
+padding: 5%;    
 }
 
-.overlayT:hover .link
-{
-/*opacity: 0.85;*/
-}
 
 .overlayT > a > p
 {
 text-align: center;
 text-transform:uppercase;
-font-size: 30px; 
+font-size: 26px !important;  
 margin-bottom: 5px; 
 }
 
@@ -198,7 +201,9 @@ margin-bottom: 15px;
 {   
 text-align: center;
 text-transform:uppercase;   
-font-size: 17px;     
+font-size: 16px;     
+text-align: left;
+opacity:0;    
 }
 
 .overlayT > a >h3
@@ -213,6 +218,13 @@ margin-bottom: 15px;
 {
 transform: scale(1.07);
 }
+
+
+.overlayT.onload
+{
+transform: scale(1.02);
+}
+
 
 a.disabled 
 {
@@ -251,7 +263,8 @@ cursor: default;
     text-align: center;
     text-transform:uppercase;   
     font-size: 11px;
-    margin-top: 0px;      
+    margin-top: 0px; 
+    opacity:0;  
     }
 
     .overlayT > a >h3
@@ -294,7 +307,8 @@ cursor: default;
     text-align: center;
     text-transform:uppercase;   
     font-size: 21px;
-    margin-top:15px;    
+    margin-top:15px; 
+    opacity:0;      
         
     }
 
@@ -306,6 +320,34 @@ cursor: default;
     }
 }
 
+#js
+{
+color: yellow; 
+text-decoration: none;
+background-color: black;   
+margin: 0px;
+padding: 0px;    
+}
+#ps
+{
+color: skyblue; 
+text-decoration: none;
+background-color: black;    
+margin: 0px;
+padding: 0px;        
+}
 
+.vss
+{
+color: skyblue; 
+text-decoration: none;
+background-color: black;    
+margin: 0px;
+padding: 0px;      
+    
+}
 
-
+.opis_next
+{     
+opacity:1.0 !important;           
+}
